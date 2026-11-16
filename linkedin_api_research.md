@@ -139,9 +139,9 @@ The LinkedIn AI Agent uses the Gemini API for generating LinkedIn post drafts an
 
 2. The user provides a topic or content idea.
 
-3. The client configuration and topic are sent to Claude.
+3. The client configuration and topic are sent to Gemini.
 
-4. Claude generates a LinkedIn post draft that follows the client's
+4. Gemini generates a LinkedIn post draft that follows the client's
    brand voice and content rules.
 
 5. The generated post is sent to a separate guardrail check.
@@ -152,7 +152,7 @@ The LinkedIn AI Agent uses the Gemini API for generating LinkedIn post drafts an
 
 ### Key Approach
 
-- Use Claude API for content generation.
+- Use Gemini API for content generation.
 - Generate content based on each client's configuration.
 - Keep the writing aligned with the client's brand voice.
 - Avoid topics and content restricted by the client's rules.
@@ -165,7 +165,7 @@ The LinkedIn AI Agent will use a human-in-the-loop approval workflow.
 
 ### Proposed Workflow
 
-1. Claude generates a LinkedIn post draft.
+1. Gemini generates a LinkedIn post draft.
 
 2. The draft is checked against the content guardrails.
 
