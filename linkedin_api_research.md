@@ -124,7 +124,7 @@ Publish through LinkedIn API
 
 ## Content-Generation Approach
 
-The LinkedIn AI Agent will use the Claude API to generate LinkedIn post drafts.
+The LinkedIn AI Agent uses the Gemini API for generating LinkedIn post drafts and checking them against content guardrails.
 
 ### Proposed Flow
 
