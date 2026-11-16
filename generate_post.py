@@ -166,7 +166,6 @@ INSTRUCTIONS
         except Exception as exc:
             print("Gemini error:", repr(exc))
             return (
-                "Post generation failed. Please check the VS Code terminal "
-                "for the error details."
+                "Sorry, we couldn't generate your post right now. Please try again in a moment."
             )
 

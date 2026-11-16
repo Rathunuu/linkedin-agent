@@ -165,14 +165,14 @@ def save_linkedin_credentials(member_id, access_token, expires_in):
             ))
 
 
-def get_linkedin_credentials(member_id):
+def get_linkedin_credentials(user_id):
     with db_connection() as conn:
         with conn.cursor() as cur:
             cur.execute("""
                 SELECT access_token, token_expires_at, member_id
                 FROM linkedin_credentials
                 WHERE user_id = %s
-            """, (str(member_id),))
+            """, (str(user_id),))
 
             row = cur.fetchone()
 
